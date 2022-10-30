@@ -10,30 +10,9 @@ import {
 import PlaceDetails from "../Place Details/PlaceDetails.Component";
 import { ListGrid, ListFormControl, Loading, Container } from "./List.Styles";
 
-const List = () => {
+const List = ({ places }) => {
   const [type, setType] = useState("restaurants");
   const [rating, setRating] = useState("");
-
-  const places = [
-    { name: "Cool Place" },
-    { name: "Best Beer" },
-    { name: "Best Steak" },
-    { name: "Cool Place" },
-    { name: "Best Beer" },
-    { name: "Best Steak" },
-    { name: "Cool Place" },
-    { name: "Best Beer" },
-    { name: "Best Steak" },
-    { name: "Cool Place" },
-    { name: "Best Beer" },
-    { name: "Best Steak" },
-    { name: "Cool Place" },
-    { name: "Best Beer" },
-    { name: "Best Steak" },
-    { name: "Cool Place" },
-    { name: "Best Beer" },
-    { name: "Best Steak" },
-  ];
 
   return (
     <Container>

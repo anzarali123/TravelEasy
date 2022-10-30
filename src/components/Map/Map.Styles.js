@@ -16,8 +16,3 @@ export const MarkerContainer = styled.div({
 
   "&:hover": { zIndex: 2 },
 });
-
-export const MapContainer = styled.div({
-  height: "85vh",
-  width: "100%",
-});
