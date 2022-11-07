@@ -1,7 +1,11 @@
+.container {
+  position: relative;
+}
+
 .map-container {
   height: 85vh;
   width: 100%;
-  
+  position: relative;
 }
 .sidebar {
   background-color: rgba(35, 55, 75, 0.9);
@@ -9,7 +13,7 @@
   padding: 6px 12px;
   font-family: monospace;
   z-index: 1;
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   margin: 12px;

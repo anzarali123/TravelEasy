@@ -8,15 +8,18 @@ import {
   HeaderToolbar,
   Title,
 } from "./Header.Styles.js";
+import { useState } from "react";
 
-const Header = ({ onPlaceChanged, onLoad }) => {
+const Header = () => {
+
+
+
   return (
     <AppBar position="static">
       <HeaderToolbar>
         <Title variant="h5">TravelEasy</Title>
         <Box display="flex">
           <Title variant="h6">Explore new places</Title>
-          {/* <Autocomplete onLoad={onLoad} onPlaceChanged={onPlaceChanged}> */}
           <SearchContainer>
             <SearchIconContainer>
               <Search />
@@ -35,7 +38,6 @@ const Header = ({ onPlaceChanged, onLoad }) => {
               }}
             />
           </SearchContainer>
-          {/* </Autocomplete> */}
         </Box>
       </HeaderToolbar>
     </AppBar>
