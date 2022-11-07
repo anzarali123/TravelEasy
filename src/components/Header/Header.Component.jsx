@@ -8,12 +8,8 @@ import {
   HeaderToolbar,
   Title,
 } from "./Header.Styles.js";
-import { useState } from "react";
 
 const Header = () => {
-
-
-
   return (
     <AppBar position="static">
       <HeaderToolbar>

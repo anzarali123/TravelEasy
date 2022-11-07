@@ -1,14 +1,7 @@
 import { useState } from "react";
-import {
-  CircularProgress,
-  Grid,
-  Typography,
-  InputLabel,
-  MenuItem,
-  Select,
-} from "@mui/material";
+import { Grid, Typography, InputLabel, MenuItem, Select } from "@mui/material";
 import PlaceDetails from "../Place Details/PlaceDetails.Component";
-import { ListGrid, ListFormControl, Loading, Container } from "./List.Styles";
+import { ListGrid, ListFormControl, Container } from "./List.Styles";
 
 const List = ({ places }) => {
   const [type, setType] = useState("restaurants");

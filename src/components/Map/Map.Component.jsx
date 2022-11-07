@@ -1,8 +1,4 @@
 import React, { useRef, useEffect, useState } from "react";
-import { LocationOnOutlined } from "@mui/icons-material";
-import { useMediaQuery, Typography } from "@mui/material";
-import { MapPaper, MarkerContainer } from "./Map.Styles";
-import Rating from "@mui/material/Rating";
 
 import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
 
@@ -17,7 +13,7 @@ const Map = ({ coordinates, setCoordinates, places, setBounds }) => {
     navigator.geolocation.getCurrentPosition(successLocation, errorLocation, {
       enableHighAccuracy: true,
     });
-  }, []);
+  });
 
   const successLocation = (position) => {
     setupMap([
