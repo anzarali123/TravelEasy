@@ -6,8 +6,7 @@ import Rating from "@mui/material/Rating";
 
 import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
 
-mapboxgl.accessToken =
-  "pk.eyJ1IjoiYW56YXJhbGkiLCJhIjoiY2w5czVyOG83MWk5dDN2bnN3cWZqZ3hnNSJ9.AB0uePbWWAk6CdFXu4bPBQ";
+mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_API_KEY;
 
 const Map = ({ coordinates, setCoordinates, places, setBounds }) => {
   const mapContainer = useRef(null);
