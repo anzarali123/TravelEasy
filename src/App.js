@@ -15,10 +15,9 @@ function App() {
   const [bounds, setBounds] = useState({});
 
   useEffect(() => {
-    // getPlacesData(bounds._sw, bounds._ne).then((data) => {
-    //   console.log(data);
-    //   setPlaces(data);
-    // });
+    getPlacesData(bounds._sw, bounds._ne).then((data) => {
+      setPlaces(data);
+    });
   }, [coordinates, bounds]);
 
   return (
